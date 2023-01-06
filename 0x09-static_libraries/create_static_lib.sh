@@ -1,4 +1,7 @@
 #!/bin/bash
-gcc -c *.c
-ar rc liball.a *.o
-ranlib liball.a
+
+for file in *.c; do
+	gcc -c "$file"
+	ar -rcs libmy.a "$
+{file%.c}.o"
+done \
